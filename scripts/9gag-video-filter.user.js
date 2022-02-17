@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        9gag video filter
-// @version     0.0.1
+// @version     0.0.2
 // @namespace   de.n00b42
 // @description 9gag videos filter
 //
@@ -16,6 +16,10 @@
 // ***********************************************************************************
 
 detectElements("article .post-container video", (e) => {
+	e.closest('article').remove();
+})
+
+detectElements("article .post-container .youtube-post", (e) => {
 	e.closest('article').remove();
 })
 
