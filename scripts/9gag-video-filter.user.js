@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        9gag video filter
-// @version     0.0.2
+// @version     0.0.3
 // @namespace   de.n00b42
 // @description 9gag videos filter
 //
 // @downloadURL https://raw.githubusercontent.com/n00b42/userscript/main/scripts/9gag-video-filter.user.js
 //
 // @include     https://9gag.com/*
+// @exclude     /^https://9gag\.com/(.+/)?a[^/]+$/
 // @grant       GM_log
 //
 // @require     https://raw.githubusercontent.com/n00b42/userscript-utilities/main/detectElements.js
